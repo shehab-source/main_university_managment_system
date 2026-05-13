@@ -23,15 +23,6 @@ namespace uni_mang_sys
             }
             Gpa = gpa;
         }
-
-        // =====================================================================
-        // BUG FIX: The workflow is now clear:
-        //   Step 1 - Build a list of courses that have at least one professor
-        //   Step 2 - Show those courses with who teaches them
-        //   Step 3 - Student picks a course
-        //   Step 4 - Show professors teaching that course, student picks one
-        //   Step 5 - Enroll
-        // =====================================================================
         public void EnrollCourse(List<Professor> professors)
         {
             // Step 1: Find which courses have at least one professor assigned
